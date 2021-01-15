@@ -1,1 +1,32 @@
+$orange: #F3615A;
+$primary: $orange;
+$purple: #4C3549;
+/*Falta elegir gris?*/
+
+@font-face{
+    font-family: "poppins";
+    src: url('../font/Poppins-Thin.ttf');
+    font-weight: thin;
+}
+@font-face{
+    font-family: "poppins";
+    src: url('../font/Poppins-Regular.ttf');
+    font-weight: normal;
+}
+@font-face{
+    font-family: "poppins";
+    src: url('../font/Poppins-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face{
+    font-family: "poppins";
+    src: url('../font/Poppins-Bold.ttf');
+    font-weight: bold;
+
+}
+
+$font-family-sans-serif: 'poppins';
+
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
