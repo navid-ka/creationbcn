@@ -52,7 +52,7 @@ $utilities: (
 			100: 100vh,
 		),
     ),
-	"padding-top": (
+	"padding-superior": (
         property: padding-top,
         class: pad-top,
 		values: (
@@ -62,7 +62,7 @@ $utilities: (
             footer-sm: 7rem,
 		),
     ),
-	"padding-bottom": (
+	"padding-inferior": (
         property: padding-bottom,
         class: pad-bot,
 		values: (
@@ -84,8 +84,21 @@ $utilities: (
 @import "../../node_modules/bootstrap/scss/variables";
 .big-container {
     @include make-container();
-    width: 1636px;
+    width: 80vw;
+    @include media-breakpoint-up(sm) {
+        width: 70%; 
+    }
+    @include media-breakpoint-up(md) {  
+        width: 70%;
+    }
+    @include media-breakpoint-up(lg) {  
+        width: 80%;
+    }
+    @include media-breakpoint-up(xl) {  
+        width: 90%;
+    }
 }
+
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
