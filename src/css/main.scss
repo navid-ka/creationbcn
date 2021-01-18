@@ -1,3 +1,6 @@
+
+
+
 $orange: #f3615a;
 $primary: $orange;
 $purple: #4c3549;
@@ -33,7 +36,7 @@ $container-max-widths: (
 	md: 720px,
 	lg: 960px,
 	xl: 1266px,
-	xxl: 1636px,
+	xxl: 1266px,
 );
 
 $utilities: (
@@ -75,4 +78,14 @@ $utilities: (
     letter-spacing: 0.125em;
 }
 
+
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+.big-container {
+    @include make-container();
+    width: 1636px;
+}
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
