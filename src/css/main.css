@@ -8432,11 +8432,7 @@ fieldset:disabled .btn {
 }
 
 .pad-top-footer {
-  padding-top: 15rem !important;
-}
-
-.pad-top-footer-sm {
-  padding-top: 7rem !important;
+  padding-top: 10rem !important;
 }
 
 .pad-bot-4 {
