@@ -10,7 +10,7 @@ $success: $purple;
 @font-face {
 	font-family: "poppins";
 	src: url("../font/Poppins-Thin.ttf");
-	font-weight: thin;
+	font-weight: 300;
 }
 @font-face {
 	font-family: "poppins";
@@ -56,6 +56,7 @@ $utilities: (
         property: padding-top,
         class: pad-top,
 		values: (
+            4: 4rem,
             5: 5rem,
             10: 10rem,
             footer: 15rem,
@@ -66,6 +67,7 @@ $utilities: (
         property: padding-bottom,
         class: pad-bot,
 		values: (
+            4: 4rem,
             5: 5rem,
             10: 10rem,
 		),

@@ -2,7 +2,7 @@
 @font-face {
   font-family: "poppins";
   src: url("../font/Poppins-Thin.ttf");
-  font-weight: thin;
+  font-weight: 300;
 }
 
 @font-face {
@@ -8419,6 +8419,10 @@ fieldset:disabled .btn {
   height: 100vh !important;
 }
 
+.pad-top-4 {
+  padding-top: 4rem !important;
+}
+
 .pad-top-5 {
   padding-top: 5rem !important;
 }
@@ -8433,6 +8437,10 @@ fieldset:disabled .btn {
 
 .pad-top-footer-sm {
   padding-top: 7rem !important;
+}
+
+.pad-bot-4 {
+  padding-bottom: 4rem !important;
 }
 
 .pad-bot-5 {
