@@ -32,6 +32,14 @@
   letter-spacing: 0.125em;
 }
 
+.vector {
+  background-image: url(../img/vector.svg);
+  background-repeat: no-repeat;
+  background-position: 0 1.4em;
+  overflow: visible;
+  z-index: 10;
+}
+
 .big-container {
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);

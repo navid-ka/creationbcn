@@ -74,6 +74,13 @@ $utilities: (
     align-items: center;
     letter-spacing: 0.125em;
 }
+.vector {
+    background-image: url(../img/vector.svg);
+    background-repeat: no-repeat;
+    background-position: 0 1.4em;
+    overflow: visible;
+    z-index: 10;
+}
 
 
 @import "../../node_modules/bootstrap/scss/mixins";
