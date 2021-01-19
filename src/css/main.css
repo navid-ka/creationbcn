@@ -8459,6 +8459,22 @@ fieldset:disabled .btn {
   padding-bottom: 10rem !important;
 }
 
+.tint-80 {
+  background-color: rgba(76, 53, 73, 0.8) !important;
+}
+
+.tint-85 {
+  background-color: rgba(76, 53, 73, 0.85) !important;
+}
+
+.tint-90 {
+  background-color: rgba(76, 53, 73, 0.9) !important;
+}
+
+.tint-95 {
+  background-color: rgba(76, 53, 73, 0.96) !important;
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
