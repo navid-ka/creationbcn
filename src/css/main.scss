@@ -82,6 +82,7 @@ $utilities: (
     z-index: 10;
 }
 
+
 .services{
     height: 360px;
 }
@@ -96,16 +97,16 @@ $utilities: (
     @include make-container();
     width: 80vw;
     @include media-breakpoint-up(sm) {
-        width: 70%; 
+        width: 100%; 
     }
     @include media-breakpoint-up(md) {  
-        width: 70%;
+        width: 90%;
     }
     @include media-breakpoint-up(lg) {  
-        width: 80%;
+        width: 90%;
     }
     @include media-breakpoint-up(xl) {  
-        width: 90%;
+        width: 80%;
     }
 }
 

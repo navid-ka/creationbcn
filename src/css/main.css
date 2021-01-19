@@ -59,25 +59,25 @@
 
 @media (min-width: 576px) {
   .big-container {
-    width: 70%;
+    width: 100%;
   }
 }
 
 @media (min-width: 768px) {
   .big-container {
-    width: 70%;
+    width: 90%;
   }
 }
 
 @media (min-width: 992px) {
   .big-container {
-    width: 80%;
+    width: 90%;
   }
 }
 
 @media (min-width: 1200px) {
   .big-container {
-    width: 90%;
+    width: 80%;
   }
 }
 
