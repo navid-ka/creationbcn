@@ -32,6 +32,10 @@
   letter-spacing: 0.125em;
 }
 
+.services {
+  height: 360px;
+}
+
 .big-container {
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
