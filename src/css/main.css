@@ -32,17 +32,12 @@
   letter-spacing: 0.125em;
 }
 
-<<<<<<< HEAD
 .vector {
   background-image: url(../img/vector.svg);
   background-repeat: no-repeat;
   background-position: 0 1.4em;
   overflow: visible;
   z-index: 10;
-=======
-.services {
-  height: 360px;
->>>>>>> 777d66e61c63a830145d074819371a4ed7e6e91c
 }
 
 .big-container {
