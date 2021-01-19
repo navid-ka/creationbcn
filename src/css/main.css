@@ -40,6 +40,14 @@
   z-index: 10;
 }
 
+.container-1920 {
+  max-width: 1920px;
+}
+
+.card-h-w {
+  height: 422px;
+  width: 345px;
+}
 .services {
   height: 360px;
 }
