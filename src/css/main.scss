@@ -85,7 +85,12 @@ $utilities: (
 .services{
     height: 360px;
 }
-
+.link-hover:hover{
+    fill: #f3615a;
+}
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
 
 .big-container {
     @include make-container();
@@ -104,8 +109,6 @@ $utilities: (
     }
 }
 
-@import "../../node_modules/bootstrap/scss/mixins";
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
