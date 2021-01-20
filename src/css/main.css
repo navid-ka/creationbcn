@@ -48,8 +48,9 @@
   height: 422px;
   width: 345px;
 }
+
 .services {
-  height: 360px;
+  height: 330px;
 }
 
 .link-hover:hover {
@@ -8453,6 +8454,14 @@ fieldset:disabled .btn {
 
 .pad-top-10 {
   padding-top: 10rem !important;
+}
+
+.pad-bot-2 {
+  padding-bottom: 2rem !important;
+}
+
+.pad-bot-3 {
+  padding-bottom: 3rem !important;
 }
 
 .pad-bot-4 {
