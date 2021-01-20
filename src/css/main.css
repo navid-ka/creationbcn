@@ -46,7 +46,7 @@
 
 .card-h-w {
   height: 422px;
-  width: 345px;
+  width: 330px;
 }
 
 .services {
@@ -55,6 +55,70 @@
 
 .link-hover:hover {
   fill: #f3615a;
+}
+
+.container-method {
+  min-width: 300px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.method {
+  font-size: 1em;
+  line-height: 1.75em;
+  border-top: 3px solid;
+  -o-border-image: linear-gradient(to right, #4c3549 0%, #f3615a 100%);
+     border-image: -webkit-gradient(linear, left top, right top, from(#4c3549), to(#f3615a));
+     border-image: linear-gradient(to right, #4c3549 0%, #f3615a 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  margin: 0 auto;
+  padding: 40px;
+  counter-increment: section;
+  position: relative;
+}
+
+.method:before {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  padding: 10px;
+  height: 1.25em;
+  width: 1.25em;
+  text-align: center;
+  line-height: 1.25em;
+  font-size: 1em;
+}
+
+.method:nth-child(odd) {
+  border-right: 3px solid;
+  padding-left: 0;
+}
+
+.method:nth-child(odd):before {
+  left: 100%;
+  margin-left: -20px;
+}
+
+.method:nth-child(even) {
+  border-left: 3px solid;
+  padding-right: 0;
+}
+
+.method:nth-child(even):before {
+  right: 100%;
+  margin-right: -20px;
+}
+
+.method:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.method:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .big-container {
