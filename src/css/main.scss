@@ -124,9 +124,8 @@ $utilities: (
     border-image: linear-gradient(to right, $success 0%, $primary 100%);
     border-image-slice: 1;
     border-width: 3px;
-    margin: 0 auto;
+    margin: 0;
     padding: 40px;
-    counter-increment: section;
     position: relative;
     
     //numbers
