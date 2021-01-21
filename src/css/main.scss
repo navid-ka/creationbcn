@@ -29,14 +29,20 @@ $success: $purple;
 }
 
 $font-family-sans-serif: "poppins";
-
 $container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+/* $container-max-widths: (
 	sm: 540px,
 	md: 720px,
 	lg: 960px,
 	xl: 1266px,
 	xxl: 1266px,
-);
+); */
 
 $utilities: (
 	"vh": (
@@ -173,8 +179,10 @@ $utilities: (
     border-bottom-right-radius:0;
     border-bottom-left-radius:0;
   }
-
-
+  .textarea {
+    height: 100px !important ;
+    resize: none;
+  }
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";

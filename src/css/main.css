@@ -24,6 +24,13 @@
   font-weight: bold;
 }
 
+/* $container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1266px,
+	xxl: 1266px,
+); */
 .footer-title {
   line-height: 163%;
   -webkit-box-align: center;
@@ -119,6 +126,11 @@
 .method:last-child {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+.textarea {
+  height: 100px !important;
+  resize: none;
 }
 
 .big-container {
@@ -801,13 +813,13 @@ progress {
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1266px;
+    max-width: 1140px;
   }
 }
 
 @media (min-width: 1400px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 1266px;
+    max-width: 1320px;
   }
 }
 
