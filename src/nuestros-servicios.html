@@ -16,11 +16,14 @@
     <link href="./css/main.css" rel="stylesheet" />
     <!--JS-->
     <script src="./js/bootstrap.js" defer></script>
-    <script src="./js/main.js" defer></script>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" defer></script>
+
 
 </head>
 
-<body>
+<body data-barba="wrapper">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light py-5">
             <div class="container-xl overflow-hidden">
@@ -30,6 +33,7 @@
                     <a class="navbar-brand fw-bold mt-3" href="#"><span class="h4 fw-bold g-0">Creation</span><span
                             class="text-primary h4 fw-bold">BCN</span></a>
                 </div>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -37,39 +41,43 @@
                 <div class="nav collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav nav mx-auto">
                         <li class="nav-item mx-auto">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a class="nav-link active" aria-current="page" href="#">Servicios</a>
+                            <a class="nav-link active" aria-current="page" href="nuestros-servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                            <a class="nav-link active" aria-current="page" href="nuestro-portfolio.html">Portfolio</a>
                         </li>
                     </ul>
                     <div class="col-auto d-flex">
                         <div class="d-none d-lg-block">
-                            <a class="btn btn-primary rounded-pill text-white" href="">Pedir presupuesto</a>
+                            <a class="btn btn-primary rounded-pill text-white px-3 py-2" href="">Pedir presupuesto</a>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-        <div class="container pb-5 my-5">
-            <div class="row">
-                <div class="col-md me-5 ">
-                    <p class="h4 text-secondary">AGENCIA CREATIVA BARCELONA</p>
-                    <h1 class="display-3 fw-bold pb-5">Nuestros <span
-                            class="text-primary vector pb-5 pe-1">servicios</span></h1>
-                </div>
-                <div class="col-md d-flex justify-content-center align-items-center">
-                    <h2 class="text-uppercase footer-title fs-4">INTEGRAMOS lo que nuestros clientes requieren para
-                        tener sitios web limpios, ligeros y fáciles de usar.
-                        OFRECEMOS soluciones digitales.</h2>
+    </header>
+
+    <main data-barba="container">
+        <section>
+            <div class="container pb-5 my-5">
+                <div class="row">
+                    <div class="col-md me-5 ">
+                        <p class="h4 text-secondary">AGENCIA CREATIVA BARCELONA</p>
+                        <h1 class="display-3 fw-bold pb-5">Nuestros <span
+                                class="text-primary vector pb-5 pe-1">servicios</span></h1>
+                    </div>
+                    <div class="col-md d-flex justify-content-center align-items-center">
+                        <h2 class="text-uppercase footer-title fs-4">INTEGRAMOS lo que nuestros clientes requieren para
+                            tener sitios web limpios, ligeros y fáciles de usar.
+                            OFRECEMOS soluciones digitales.</h2>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <main>
+        </section>
+
         <section class="pad-bot-5">
             <h2 class="text-center footer-title fw-bold text-primary pad-bot-5">SERVICIOS</h2>
             <div class="big-container">
@@ -254,6 +262,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
