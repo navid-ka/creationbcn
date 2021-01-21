@@ -1,0 +1,25 @@
+{
+  "name": "creationbcn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@barba/core": "^2.9.7",
+    "bootstrap": "^5.0.0-beta1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navid-ka/creationbcn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/navid-ka/creationbcn/issues"
+  },
+  "homepage": "https://github.com/navid-ka/creationbcn#readme"
+}
