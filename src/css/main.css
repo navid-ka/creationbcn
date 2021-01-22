@@ -140,10 +140,11 @@
   padding-right: 0;
   padding-top: 0;
   background-image: url("https://i.pinimg.com/564x/70/fa/97/70fa97bac09e524bae4c006a1ead5512.jpg");
+  /*   background-image: url("../img/logo_creationbcn2.png"); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-color: #f3615a;
+  background-color: #4c3549;
   width: 0%;
   height: 100%;
   -webkit-transform-origin: top left;
