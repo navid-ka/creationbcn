@@ -191,12 +191,14 @@ $utilities: (
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
+  background-image: url("https://i.pinimg.com/564x/70/fa/97/70fa97bac09e524bae4c006a1ead5512.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   background-color: $primary;
-  width: 100%;
+  width: 0%;
   height: 100%;
-  transform: scaleY(0) skewX(0);
-
-  transform-origin: -50% -30%;
+  transform-origin: top left;
 }
 
 .loading-container {

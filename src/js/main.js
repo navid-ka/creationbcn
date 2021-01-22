@@ -10,8 +10,9 @@ function pageTransitionIn() {
 			// .set(loadingScreen, { transformOrigin: 'bottom left'})
 			// .to(loadingScreen, { duration: .5, scaleY: 1 })
 			.to(loadingScreen, {
-				duration: 0.3,
-				scaleY: 1,
+					width: "100%",
+					duration: 1,
+	
 				/* transformOrigin: "left top", */
 			})
 	);
@@ -20,14 +21,13 @@ function pageTransitionIn() {
 function pageTransitionOut(container) {
 	// GSAP methods can be chained and return directly a promise
 	return gsap
-		.timeline({ delay: 0.5 }) // More readable to put it here
+		.timeline({ delay: 0.7 }) // More readable to put it here
 		.add("start") // Use a label to sync screen and content animation
 		.to(
 			loadingScreen,
 			{
-				duration: 0.3,
-				scaleY: 0,
-				skewX: 0,
+				width: "0%",
+				duration: 0.5,
 				/* transformOrigin: "left bottom", */
 				ease: "power1.out",
 			},
