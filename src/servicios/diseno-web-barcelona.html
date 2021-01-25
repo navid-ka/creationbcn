@@ -11,16 +11,20 @@
         Agencia Creativa Barcelona | Diseño Web en Barcelona | SEO | SEM
     </title>
     <link rel="canonical" href="https://creationbcn.com/" />
-
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <!-- Bootstrap CSS -->
     <link href="../css/main.css" rel="stylesheet" />
     <!--JS-->
     <script src="../js/bootstrap.js" defer></script>
-    <script src="../js/main.js" defer></script>
-
+    
 </head>
 
 <body>
+    <div class="loading-container">
+        <div class="loading-screen">
+        </div>
+    </div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light py-5">
             <div class="container-xl">
@@ -40,16 +44,21 @@
                             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item mx-auto dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Dropdown
+                            <a class="nav-link text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Servicios
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="./../nuestros-servicios.html">Nuestros Servicios</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
-                          </li>
+                        </li>
                         <li class="nav-item mx-auto">
                             <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
                         </li>
@@ -66,7 +75,8 @@
             <h1 class="text-center text-primary fw-bold">DISEÑO WEB</h1>
         </div>
     </header>
-    <main>
+    <div data-barba="wrapper">
+        <main data-barba="container">
             <section class="pad-bot-5 h5 lh-base">
                 <div class="container">
                     <div class="pad-bot-5 text-center">
@@ -155,8 +165,8 @@
                     </div>
                 </div>
             </section>
-
-    </main>
+        </main>
+    </div>
     <footer class="bg-success">
         <div class=" big-container pad-top-10">
             <div class="row pad-bot-4">
@@ -233,6 +243,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
