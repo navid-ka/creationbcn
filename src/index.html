@@ -25,16 +25,16 @@
         <div class="loading-screen">
         </div>
     </div>
+    <div data-barba="wrapper">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light py-5">
-            <div class="container-xl overflow-hidden">
+            <div class="container-xl">
                 <div class="d-flex">
                     <img class="d-block img-fluid" src="./img/logo_creationbcn2.png" alt="logo creationBCN" height="80"
                         width="80" />
-                    <a class="navbar-brand fw-bold mt-3" href="#"><span class="h4 fw-bold g-0">Creation</span><span
+                    <a class="navbar-brand fw-bold mt-3" href="./index.html"><span class="h4 fw-bold g-0">Creation</span><span
                             class="text-primary h4 fw-bold">BCN</span></a>
                 </div>
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -42,27 +42,41 @@
                 <div class="nav collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav nav mx-auto">
                         <li class="nav-item mx-auto">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item mx-auto dropdown">
+                            <a class="nav-link text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./nuestros-servicios.html">Nuestros Servicios</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./servicios/diseno-web-barcelona.html">Diseño web</a></li>
+                                <li><a class="dropdown-item" href="./servicios/soluciones-e-commerce.html">Soluciones e-commerce</a></li>
+                                <li><a class="dropdown-item" href="./servicios/email-marketing.html">Email Marketing</a></li>
+                                <li><a class="dropdown-item" href="./servicios/programacion-a-medida.html">Programación a medida</a></li>
+                                <li><a class="dropdown-item" href="./servicios/servicios-de-seguridad.html">Servicios de seguridad</a></li>
+                                <li><a class="dropdown-item" href="./servicios/seo-y-sem.html">SEO y SEM</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a class="nav-link active" aria-current="page" href="nuestros-servicios.html">Servicios</a>
-                        </li>
-                        <li class="nav-item mx-auto">
-                            <a class="nav-link active" aria-current="page" href="nuestro-portfolio.html">Portfolio</a>
+                            <a class="nav-link active" aria-current="page" href="./nuestro-portfolio.html">Portfolio</a>
                         </li>
                     </ul>
                     <div class="col-auto d-flex">
                         <div class="d-none d-lg-block">
-                            <a class="btn btn-primary rounded-pill text-white px-3 py-2" href="">Pedir presupuesto</a>
+                            <a class="btn btn-primary rounded-pill text-white" data-barba-prevent href="./contacto.html">Pedir presupuesto</a>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-
-    <div data-barba="wrapper">
-        <main data-barba="container">
+        <main data-barba="container" data-barba-namespace="home">
 
             <section>
                 <div class="container pb-5 my-5">
@@ -245,7 +259,7 @@
                     </h2>
                     <div class="col-auto d-md-flex py-3">
                         <div class="my-auto">
-                            <a class="btn btn-light rounded-pill text-primary px-3 py-2 fw-bold" href="">Pedir
+                            <a class="btn btn-light rounded-pill text-primary px-3 py-2 fw-bold" data-barba-prevent href="./contacto.html">Pedir
                                 presupuesto</a>
                         </div>
                     </div>
@@ -423,7 +437,7 @@
                     </div>
                     <p class="fw-bold h4">¿Quieres ver más?</p>
                     <div class="my-5">
-                        <a class="btn btn-primary rounded-pill text-white fw-bold px-5" href="">Portfolio</a>
+                        <a class="btn btn-primary rounded-pill text-white fw-bold px-5" href="./nuestro-portfolio.html">Portfolio</a>
                     </div>
                 </div>
             </section>
@@ -440,8 +454,7 @@
                     </h2>
                     <div class="col-auto d-md-flex py-3">
                         <div class="my-auto">
-                            <a class="btn btn-light rounded-pill text-primary px-3 py-2 fw-bold" href="">Pedir
-                                presupuesto</a>
+                            <a class="btn btn-light rounded-pill text-primary px-3 py-2 fw-bold" data-barba-prevent href="./contacto.html">Pedir presupuesto</a>
                         </div>
                     </div>
                 </div>
@@ -506,8 +519,7 @@
                         <div class="row">
                             <div class="col-10">
                                 <h3 class="fw-bold">Implementación</h3>
-                                <p>Pondremos en marcha la ejecución del proyecto y buscaremos en todo momento tu
-                                    opinión.</p>
+                                <p>Pondremos en marcha la ejecución del proyecto y buscaremos en todo momento tu opinión.</p>
                             </div>
                             <div class="col-2 d-flex align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
@@ -529,8 +541,7 @@
                             </div>
                             <div class="col-10">
                                 <h3 class="fw-bold">Entrega</h3>
-                                <p>Entregaremos el trabajo finalizado. Tu proyecto ya será una realidad y ahora sólo
-                                    tocará que disfrutes de él.</p>
+                                <p>Entregaremos el trabajo finalizado. Tu proyecto ya será una realidad y ahora sólo tocará que disfrutes de él.</p>
                             </div>
                         </div>
                     </div>

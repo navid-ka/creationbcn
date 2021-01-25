@@ -35,7 +35,9 @@ function pageTransitionOut(container) {
 		);
 }
 
-
+barba.hooks.enter(() => {
+    window.scrollTo(0, 0);
+});
 barba.init({
 		// We don't want "synced transition"
 		// because both content are not visible at the same time

@@ -21,17 +21,21 @@
 
 </head>
 
-<body data-barba="wrapper">
+<body>
+    <div class="loading-container">
+        <div class="loading-screen">
+        </div>
+    </div>
+    <div data-barba="wrapper">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light py-5">
-            <div class="container-xl overflow-hidden">
+            <div class="container-xl">
                 <div class="d-flex">
                     <img class="d-block img-fluid" src="./img/logo_creationbcn2.png" alt="logo creationBCN" height="80"
                         width="80" />
-                    <a class="navbar-brand fw-bold mt-3" href="#"><span class="h4 fw-bold g-0">Creation</span><span
+                    <a class="navbar-brand fw-bold mt-3" href="./index.html"><span class="h4 fw-bold g-0">Creation</span><span
                             class="text-primary h4 fw-bold">BCN</span></a>
                 </div>
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -39,29 +43,41 @@
                 <div class="nav collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav nav mx-auto">
                         <li class="nav-item mx-auto">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item mx-auto dropdown">
+                            <a class="nav-link text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./nuestros-servicios.html">Nuestros Servicios</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./servicios/diseno-web-barcelona.html">Diseño web</a></li>
+                                <li><a class="dropdown-item" href="./servicios/soluciones-e-commerce.html">Soluciones e-commerce</a></li>
+                                <li><a class="dropdown-item" href="./servicios/email-marketing.html">Email Marketing</a></li>
+                                <li><a class="dropdown-item" href="./servicios/programacion-a-medida.html">Programación a medida</a></li>
+                                <li><a class="dropdown-item" href="./servicios/servicios-de-seguridad.html">Servicios de seguridad</a></li>
+                                <li><a class="dropdown-item" href="./servicios/seo-y-sem.html">SEO y SEM</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a class="nav-link active" aria-current="page" href="nuestros-servicios.html">Servicios</a>
-                        </li>
-                        <li class="nav-item mx-auto">
-                            <a class="nav-link active" aria-current="page" href="nuestro-portfolio.html">Portfolio</a>
+                            <a class="nav-link active" aria-current="page" href="./nuestro-portfolio.html">Portfolio</a>
                         </li>
                     </ul>
                     <div class="col-auto d-flex">
                         <div class="d-none d-lg-block">
-                            <a class="btn btn-primary rounded-pill text-white px-3 py-2" href="">Pedir presupuesto</a>
+                            <a class="btn btn-primary rounded-pill text-white" data-barba-prevent href="./contacto.html">Pedir presupuesto</a>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    <main data-barba="container">
-        <div class="frame1"></div>
-        <div class="frame2"></div>
-        <div class="frame3"></div>
-        <div class="frame4"></div>
+    <main data-barba="container" data-barba-namespace="portfolio">
         <section>
             <div class="container pb-5 my-5">
                 <div class="row">
@@ -79,7 +95,6 @@
             </div>
         </section>
 
-        <section>
             <section class="pad-bot-5">
                 <h2 class="text-center footer-title fw-bold text-primary pad-bot-5">PROYECTOS</h2>
                 <div class="container text-center">
@@ -112,7 +127,7 @@
 
             </section>
     </main>
-
+    </div>
     <footer class="bg-success">
         <div class=" big-container pad-top-10">
             <div class="row pad-bot-4">

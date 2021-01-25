@@ -14,9 +14,9 @@
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <!-- Bootstrap CSS -->
-    <link href="../css/main.css" rel="stylesheet" />
+    <link href="./../css/main.css" rel="stylesheet" />
     <!--JS-->
-    <script src="../js/bootstrap.js" defer></script>
+    <script src="./../js/bootstrap.js" defer></script>
     
 </head>
 
@@ -25,13 +25,14 @@
         <div class="loading-screen">
         </div>
     </div>
+    <div data-barba="wrapper">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light py-5">
             <div class="container-xl">
                 <div class="d-flex">
-                    <img class="d-block img-fluid" src="../img/logo_creationbcn2.png" alt="logo creationBCN" height="80"
+                    <img class="d-block img-fluid" src="./../img/logo_creationbcn2.png" alt="logo creationBCN" height="80"
                         width="80" />
-                    <a class="navbar-brand fw-bold mt-3" href="#"><span class="h4 fw-bold g-0">Creation</span><span
+                    <a class="navbar-brand fw-bold mt-3" href="./../index.html"><span class="h4 fw-bold g-0">Creation</span><span
                             class="text-primary h4 fw-bold">BCN</span></a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -41,7 +42,7 @@
                 <div class="nav collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav nav mx-auto">
                         <li class="nav-item mx-auto">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="./../index.html">Inicio</a>
                         </li>
                         <li class="nav-item mx-auto dropdown">
                             <a class="nav-link text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -54,30 +55,32 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="./diseno-web-barcelona.html">Diseño web</a></li>
+                                <li><a class="dropdown-item" href="./soluciones-e-commerce.html">Soluciones e-commerce</a></li>
+                                <li><a class="dropdown-item" href="./email-marketing.html">Email Marketing</a></li>
+                                <li><a class="dropdown-item" href="./programacion-a-medida.html">Programación a medida</a></li>
+                                <li><a class="dropdown-item" href="./servicios-de-seguridad.html">Servicios de seguridad</a></li>
+                                <li><a class="dropdown-item" href="./seo-y-sem.html">SEO y SEM</a></li>
                             </ul>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                            <a class="nav-link active" aria-current="page" href="./../nuestro-portfolio.html">Portfolio</a>
                         </li>
                     </ul>
                     <div class="col-auto d-flex">
                         <div class="d-none d-lg-block">
-                            <a class="btn btn-primary rounded-pill text-white" href="">Pedir presupuesto</a>
+                            <a class="btn btn-primary rounded-pill text-white" data-barba-prevent href="./../contacto.html">Pedir presupuesto</a>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-        <div class="container pad-bot-5">
-            <h1 class="text-center text-primary fw-bold">DISEÑO WEB</h1>
-        </div>
     </header>
-    <div data-barba="wrapper">
-        <main data-barba="container">
+        <main data-barba="container" data-barba-namespace="diseno-web">
             <section class="pad-bot-5 h5 lh-base">
+                <div class="container pad-bot-5">
+                    <h1 class="text-center text-primary fw-bold">DISEÑO WEB</h1>
+                </div>
                 <div class="container">
                     <div class="pad-bot-5 text-center">
                         <img class="img-fluid" src="../img/diseñoweb.PNG" alt="" width="1600" height="750">
@@ -135,7 +138,7 @@
                             SUEÑO?</p>
                         <div class="col-auto d-md-flex py-3">
                             <div class="my-auto">
-                                <a class="btn btn-light rounded-pill text-primary px-3 py-2 fw-bold" href="">Pedir
+                                <a class="btn btn-light rounded-pill text-primary px-3 py-2 fw-bold" data-barba-prevent href="./contacto.html">Pedir
                                     presupuesto</a>
                             </div>
                         </div>
@@ -171,9 +174,7 @@
         <div class=" big-container pad-top-10">
             <div class="row pad-bot-4">
                 <div class="ps-lg-5 col-md pad-bot-4">
-                    <h2 class="display-3 text-white footer-title fw-bold">¿LISTO PARA
-                        EMPEZAR
-                        UN PROYECTO?</h2>
+                    <h2 class="display-3 text-white footer-title fw-bold">¿LISTO PARA EMPEZAR UN PROYECTO?</h2>
                 </div>
                 <div class="col-md pt-4">
                     <div class="row">
@@ -246,7 +247,7 @@
 
     <script src="https://unpkg.com/@barba/core"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="./../js/main.js"></script>
 </body>
 
 </html>
