@@ -36,28 +36,19 @@ barba.hooks.enter(() => {
 });
 
 
-const myRoutes = [{
-	path: '/index.html',
-	name: 'home'
+/* const myRoutes = [{
+	path: '/',
+	name: 'level-1'
   }, {
-	path: '/nuestro-portfolio.html',
-	name: 'portfolio'
-  }, {
-	path: '/nuestros-servicios.html',
-	name: 'servicios'
-  }, {
-	path: '/servicios/diseno-web-barcelona.html',
-	name: 'diseno-web'
-  }, {
-	path: '/servicios/soluciones-e-commerce.html',
-	name: 'e-commerce'
-}];
+	path: '/servicios/',
+	name: 'level-2'
+  },];
 
   
 barba.use(barbaRouter, {
 	routes: myRoutes
 });
-
+ */
 
 barba.init({
 		transitions: [
@@ -66,9 +57,10 @@ barba.init({
 					await pageTransitionIn();
 					data.current.container.remove();
 				},
-
 				async enter(data) {
-					await pageTransitionOut(data.next.namespace);
+
+					await pageTransitionOut(data.next.route.name);
+					console.log(['level-1'])
 				},
 			},
 		],
