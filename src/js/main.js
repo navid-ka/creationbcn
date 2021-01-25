@@ -6,20 +6,20 @@ function pageTransitionIn() {
 		gsap
 			.to(loadingScreen, {
 					width: "100%",
-					duration: 1,
+					duration: 0.5,
 			})
 	);
 }
 
 function pageTransitionOut(container) {
 	return gsap
-		.timeline({ delay: 0.7 })
+		.timeline({ delay: 0.3 })
 		.add("start")
 		.to(
 			loadingScreen,
 			{
 				width: "0%",
-				duration: 0.5,
+				duration: 0.3,
 				ease: "power1.out",
 			},
 			"start"
@@ -36,34 +36,30 @@ barba.hooks.enter(() => {
 });
 
 
-/* const myRoutes = [{
-	path: '/',
-	name: 'level-1'
-  }, {
-	path: '/servicios/',
-	name: 'level-2'
-  },];
-
-  
-barba.use(barbaRouter, {
-	routes: myRoutes
-});
- */
-
 barba.init({
-		transitions: [
-			{
-				async leave(data) {
-					await pageTransitionIn();
-					data.current.container.remove();
-				},
-				async enter(data) {
-
-					await pageTransitionOut(data.next.route.name);
-					console.log(['level-1'])
-				},
+		transitions: [{
+			async leave(data) {
+				await pageTransitionIn();
+				data.current.container.remove();
 			},
-		],
+			async enter(data) {
+				await pageTransitionOut(data.next.container);
+			},
+	
+		}],
+		views: [{
+			namespace: 'level-2',
+			beforeLeave(data) {
+				delay(700);
+				location.reload();
+			}
+		}, {
+			namespace: 'level-2',
+			beforeEnter(data) {
+				location.reload();
+				done();
+			}
+		}]
 	});
 
 
