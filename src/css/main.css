@@ -162,6 +162,29 @@
 }
 
 /* Loading Screen Styling Ends */
+.fade-in {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  width: 0;
+  height: 0%;
+  border-radius: 50%;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.fade-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  pointer-events: none;
+}
+
 .big-container {
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
