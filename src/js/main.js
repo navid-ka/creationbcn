@@ -20,7 +20,6 @@ function delay(n) {
 	});
 }
 
-
 //Anims
 
 function pageTransitionIn() {
