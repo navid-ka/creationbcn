@@ -1,16 +1,7 @@
 const loadingScreen = document.querySelector(".loading-screen");
 const fade = document.querySelector(".fade-out");
 
-//Helpers
 
-function getRootWebSitePath(){
-    var _location = document.location.toString();
-    var applicationNameIndex = _location.indexOf('/', _location.indexOf('://') + 3);
-    var applicationName = _location.substring(0, applicationNameIndex) + '/';
-    var webFolderIndex = _location.indexOf('/', _location.indexOf(applicationName) + applicationName.length);
-    var webFolderFullPath = _location.substring(0, webFolderIndex);
-    return webFolderFullPath;
-}
 function delay(n) {
 	n = n || 2000;
 	return new Promise((done) => {
@@ -72,6 +63,7 @@ barba.init({
 	timeout: 5000,
 	transitions: [
 		{
+			sync: true,
 			name: "home",
 			from: { namespace: "level-1" },
 			to: { namespace: "level-1" },
@@ -86,9 +78,10 @@ barba.init({
 			},
 		},
 		{
+			sync: true,
 			name: "portfolio",
-			from: { namespace: "level-1" },
-			to: { namespace: "detail" },
+			from: { namespace: ["level-1"] },
+			to: { namespace: ["detail"] },
 			async leave(data) {
 				await fadeIn();
 				delay(300);
@@ -102,9 +95,10 @@ barba.init({
 			},
 		},
 		{
+			sync: true,
 			name: "servicios",
-			from: { namespace: "level-1" },
-			to: { namespace: "level-2" },
+			from: { namespace: ["level-1"] },
+			to: { namespace: ['level-2'] },
 			async leave(data) {
 				await fadeIn();
 				delay(300);
@@ -117,9 +111,10 @@ barba.init({
 		},
 
 		{
+			sync: true,
 			name: "level-2",
-			from: { namespace: "level-2" },
-			to: { namespace: "level-2" },
+			from: { namespace: ['level-2'] },
+			to: { namespace: ['level-2'] },
 			async leave(data) {
 				await pageTransitionIn();
 				data.current.container.remove();
@@ -130,36 +125,24 @@ barba.init({
 		},
 
 		{
+			sync: true,
 			name: "level-2-1",
-			from: { namespace: "level-2" },
-			to: { namespace: "level-1" },
+			from: { namespace: ['level-2'] },
+			to: { namespace: ["level-1"] },
 			async leave(data) {
 				await pageTransitionIn();
 				data.current.container.remove();
 			},
 			async enter(data) {
 				await pageTransitionOut(data.next.container);
-			},
-		},
-		{
-			name: "lv-detail",
-			from: { namespace: "level-2" },
-			to: { namespace: "detail" },
-			
-			async leave(data) {
-/* 				barba.go(`${basePath}`) */
-				await fadeIn();
-				data.current.container.remove();
-			},
-			async enter(data) {
-				await fadeOut(data.next.container);
 			},
 		},
 	],
 			views: [{
-			namespace: 'level-2',
+			namespace: ['level-2'],
 			beforeLeave(data) {
-				barba.go(getRootWebSitePath());
+				barba.history.remove();
+                barba.go(url);
 			}
 		},]
 });
