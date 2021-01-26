@@ -2,14 +2,6 @@ const loadingScreen = document.querySelector(".loading-screen");
 const fade = document.querySelector(".fade-out");
 
 
-function delay(n) {
-	n = n || 2000;
-	return new Promise((done) => {
-		setTimeout(() => {
-			done();
-		}, n);
-	});
-}
 
 //Anims
 
@@ -49,11 +41,6 @@ function fadeOut() {
 		"start"
 	);
 }
-
-barba.hooks.enter((data) => {
-	console.log(data.current.url.href);
-});
-
 barba.hooks.enter(() => {
 	window.scrollTo(0, 0);
 });
@@ -63,87 +50,96 @@ barba.init({
 	timeout: 5000,
 	transitions: [
 		{
-			sync: true,
 			name: "home",
 			from: { namespace: "level-1" },
 			to: { namespace: "level-1" },
-			async leave(data) {
-				delay(300);
-				await pageTransitionIn();
+			leave(data) {
+				pageTransitionIn();
 				data.current.container.remove();
 			},
-			async enter(data) {
-				delay(300);
-				await pageTransitionOut(data.next.container);
+			enter(data) {
+				pageTransitionOut(data.next.container);
 			},
 		},
 		{
-			sync: true,
 			name: "portfolio",
 			from: { namespace: ["level-1"] },
 			to: { namespace: ["detail"] },
-			async leave(data) {
-				await fadeIn();
-				delay(300);
+			leave(data) {
+				fadeIn();
+				delay(1000);
 				data.current.container.remove();
 
 			},
-			async enter(data) {
-				delay(300)
-				await fadeOut(data.next.container);
-
+			enter(data) {
+				delay(1000)
+				fadeOut(data.next.container);
 			},
 		},
 		{
-			sync: true,
 			name: "servicios",
 			from: { namespace: ["level-1"] },
 			to: { namespace: ['level-2'] },
-			async leave(data) {
-				await fadeIn();
-				delay(300);
+			leave(data) {
+				delay(1000);
+				fadeIn();
 				data.current.container.remove();
 			},
-			async enter(data) {
-				delay(300);
-				await fadeOut(data.next.container);
+			enter(data) {
+				location.reload();
+				delay(1000);
+				fadeOut(data.next.container);
+				
 			},
 		},
 
 		{
-			sync: true,
 			name: "level-2",
 			from: { namespace: ['level-2'] },
 			to: { namespace: ['level-2'] },
-			async leave(data) {
-				await pageTransitionIn();
+			leave(data) {
+
+				pageTransitionIn();
 				data.current.container.remove();
 			},
-			async enter(data) {
-				await pageTransitionOut(data.next.container);
+			enter(data) {
+
+				pageTransitionOut(data.next.container);
 			},
 		},
 
 		{
-			sync: true,
 			name: "level-2-1",
 			from: { namespace: ['level-2'] },
 			to: { namespace: ["level-1"] },
-			async leave(data) {
-				await pageTransitionIn();
+			leave(data) {
+
+				delay(1000);
+				pageTransitionIn();
 				data.current.container.remove();
 			},
-			async enter(data) {
-				await pageTransitionOut(data.next.container);
+			enter(data) {
+				delay(1000);
+				pageTransitionOut(data.next.container);
 			},
 		},
 	],
-			views: [{
+/* 		views: [{
 			namespace: ['level-2'],
 			beforeLeave(data) {
-				barba.history.remove();
-                barba.go(url);
-			}
-		},]
+
+			},
+			beforeEnter(data){
+				location.reload();
+			} 
+		},]  */
 });
 
+function delay(n) {
+	n = n || 2000;
+	return new Promise((done) => {
+		setTimeout(() => {
+			done();
+		}, n);
+	});
+}
