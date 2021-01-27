@@ -237,7 +237,7 @@ $utilities: (
 } */
 .overlay {
   position: absolute;
-  width: 100%;
+  width: 0%;
   height: 100%;
   background-color: rgb(76, 53, 73);
   background-image: url(../img/logo_creationbcn2.png);
@@ -245,7 +245,7 @@ $utilities: (
   background-position: center;
   left: 0;
   top: 0;
-  transform: scale(0);
+  transform: translateX(-3000px);
   transform-origin: left;
 }
 .transition-fade {
@@ -265,11 +265,13 @@ html.is-animating .page-transition {
   transform: translateX(-100px);
 }
 .transition-wipe {
-  transition: .7s cubic-bezier(0, 0, .58, 1);
-  transform: scaleX(0);
+  transition: 1s cubic-bezier(0.45, 0.25, 0.60, 0.95);
+  transform: translateX(-3000);
 }
 html.is-animating .transition-wipe {
-  transform: scaleX(1);
+  transform: translateX(0);
+  width: 100%;
+
 }
 
 
