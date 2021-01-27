@@ -2,7 +2,6 @@ const loadingScreen = document.querySelector(".loading-screen");
 const fade = document.querySelector(".fade-out");
 
 
-
 //Anims
 
 function pageTransitionIn() {
@@ -53,12 +52,16 @@ barba.init({
 			name: "home",
 			from: { namespace: "level-1" },
 			to: { namespace: "level-1" },
-			leave(data) {
+			async leave(data) {
+				const done = this.async();
 				pageTransitionIn();
-				data.current.container.remove();
+				await delay(1500);
+				done();
+
 			},
 			enter(data) {
-				pageTransitionOut(data.next.container);
+				pageTransitionOut();
+
 			},
 		},
 		{
@@ -68,27 +71,27 @@ barba.init({
 			leave(data) {
 				fadeIn();
 				delay(1000);
-				data.current.container.remove();
+
 
 			},
 			enter(data) {
 				delay(1000)
-				fadeOut(data.next.container);
+				fadeOut();
 			},
 		},
 		{
 			name: "servicios",
 			from: { namespace: ["level-1"] },
 			to: { namespace: ['level-2'] },
-			leave(data) {
+			leave() {
 				delay(1000);
 				fadeIn();
-				data.current.container.remove();
+	
 			},
 			enter(data) {
 				location.reload();
 				delay(1000);
-				fadeOut(data.next.container);
+				fadeOut();
 				
 			},
 		},
@@ -100,11 +103,10 @@ barba.init({
 			leave(data) {
 
 				pageTransitionIn();
-				data.current.container.remove();
 			},
 			enter(data) {
 
-				pageTransitionOut(data.next.container);
+				pageTransitionOut();
 			},
 		},
 
@@ -116,11 +118,11 @@ barba.init({
 
 				delay(1000);
 				pageTransitionIn();
-				data.current.container.remove();
+
 			},
 			enter(data) {
 				delay(1000);
-				pageTransitionOut(data.next.container);
+				pageTransitionOut();
 			},
 		},
 	],
