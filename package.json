@@ -5,7 +5,9 @@
   "main": "index.js",
   "dependencies": {
     "@barba/core": "^2.9.7",
-    "bootstrap": "^5.0.0-beta1"
+    "@swup/preload-plugin": "^1.0.3",
+    "bootstrap": "^5.0.0-beta1",
+    "swup": "^2.0.14"
   },
   "devDependencies": {},
   "scripts": {
