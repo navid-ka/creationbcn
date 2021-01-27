@@ -134,7 +134,7 @@
 }
 
 /* Loading Screen Styling */
-.loading-screen {
+/* .loading-screen {
   position: relative;
   padding-left: 0;
   padding-right: 0;
@@ -143,11 +143,10 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-color: #4c3549;
+  background-color: $purple;
   width: 0%;
   height: 100%;
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
+  transform-origin: top left;
 }
 
 .loading-container {
@@ -161,8 +160,9 @@
   pointer-events: none;
 }
 
-/* Loading Screen Styling Ends */
-.fade-in {
+/* Loading Screen Styling Ends
+
+.fade-in{
   position: relative;
   padding-left: 0;
   padding-right: 0;
@@ -170,8 +170,7 @@
   width: 0;
   height: 0%;
   border-radius: 50%;
-  -webkit-transform-origin: center;
-          transform-origin: center;
+  transform-origin: center;
 }
 
 .fade-out {
@@ -183,6 +182,58 @@
   overflow: hidden;
   z-index: 10;
   pointer-events: none;
+} */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #4c3549;
+  background-image: url(../img/logo_creationbcn2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+  top: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.transition-fade {
+  -webkit-transition: 600ms;
+  transition: 600ms;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+.page-transition {
+  -webkit-transition: 600ms;
+  transition: 600ms;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+html.is-animating .page-transition {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
+.transition-wipe {
+  -webkit-transition: 0.7s cubic-bezier(0, 0, 0.58, 1);
+  transition: 0.7s cubic-bezier(0, 0, 0.58, 1);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+html.is-animating .transition-wipe {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .big-container {

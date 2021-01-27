@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" id="swup" class="transition-overlay">
+<html lang="es">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -63,7 +63,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main id="swup" class="transition-fade">
         <section class="pt-3">
             <div class="container">
                 <div class="row">
@@ -113,8 +113,9 @@
             </div>
         </section>
     </main>
-    <script src="js/swup.js"></script>
-    <script src="js/SwupPreloadPlugin.js"></script>
+    <div class="transition-wipe overlay"></div>
+    <script src="js/swup.min.js"></script>
+    <script src="js/SwupPreloadPlugin.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

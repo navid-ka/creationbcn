@@ -186,7 +186,7 @@ $utilities: (
 
 /* Loading Screen Styling */
 
-.loading-screen {
+/* .loading-screen {
   position: relative;
   padding-left: 0;
   padding-right: 0;
@@ -212,7 +212,7 @@ $utilities: (
   pointer-events: none;
 }
 
-/* Loading Screen Styling Ends */
+/* Loading Screen Styling Ends
 
 .fade-in{
   position: relative;
@@ -234,7 +234,44 @@ $utilities: (
   overflow: hidden;
   z-index: 10;
   pointer-events: none;
+} */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(76, 53, 73);
+  background-image: url(../img/logo_creationbcn2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+  top: 0;
+  transform: scale(0);
+  transform-origin: left;
 }
+.transition-fade {
+  transition: 600ms;
+  opacity: 1;
+}
+html.is-animating .transition-fade {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+.page-transition {
+  transition: 600ms;
+  transform: translateX(0);
+}
+html.is-animating .page-transition {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+.transition-wipe {
+  transition: .7s cubic-bezier(0, 0, .58, 1);
+  transform: scaleX(0);
+}
+html.is-animating .transition-wipe {
+  transform: scaleX(1);
+}
+
 
 
 @import "../../node_modules/bootstrap/scss/mixins";

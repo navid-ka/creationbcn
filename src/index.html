@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" id="swup" class="transition-overlay">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
@@ -11,8 +11,6 @@
         Agencia Creativa Barcelona | Diseño Web en Barcelona | SEO | SEM
     </title>
     <link rel="canonical" href="https://creationbcn.com/" />
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <!-- Bootstrap CSS -->
     <link href="css/main.css" rel="stylesheet" />
     <!--JS-->
@@ -27,7 +25,7 @@
                 <div class="d-flex">
                     <img class="d-block img-fluid" src="img/logo_creationbcn2.png" alt="logo creationBCN" height="80"
                         width="80" />
-                    <a class="navbar-brand fw-bold mt-3" href="index.html"><span class="h4 fw-bold g-0">Creation</span><span
+                    <a class="navbar-brand fw-bold mt-3 page-transition" href="/src/index.html"><span class="h4 fw-bold g-0">Creation</span><span
                             class="text-primary h4 fw-bold">BCN</span></a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -37,41 +35,41 @@
                 <div class="nav collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav nav mx-auto">
                         <li class="nav-item mx-auto">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            <a class="nav-link active page-transition" aria-current="page" href="/src/index.html">Inicio</a>
                         </li>
                         <li class="nav-item mx-auto dropdown">
-                            <a class="nav-link text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link text-dark page-transition" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Servicios
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="nuestros-servicios.html">Nuestros Servicios</a>
+                                <li><a class="dropdown-item page-transition" href="/src/nuestros-servicios.html">Nuestros Servicios</a>
                                 </li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="servicios/diseno-web-barcelona.html">Diseño web</a></li>
-                                <li><a class="dropdown-item" href="servicios/soluciones-e-commerce.html">Soluciones e-commerce</a></li>
-                                <li><a class="dropdown-item" href="servicios/email-marketing.html">Email Marketing</a></li>
-                                <li><a class="dropdown-item" href="servicios/programacion-a-medida.html">Programación a medida</a></li>
-                                <li><a class="dropdown-item" href="servicios/servicios-de-seguridad.html">Servicios de seguridad</a></li>
-                                <li><a class="dropdown-item" href="servicios/seo-y-sem.html">SEO y SEM</a></li>
+                                <li><a class="dropdown-item page-transition" href="/src/servicios/diseno-web-barcelona.html">Diseño web</a></li>
+                                <li><a class="dropdown-item page-transition" href="/src/servicios/soluciones-e-commerce.html">Soluciones e-commerce</a></li>
+                                <li><a class="dropdown-item page-transition" href="/src/servicios/email-marketing.html">Email Marketing</a></li>
+                                <li><a class="dropdown-item page-transition" href="/src/servicios/programacion-a-medida.html">Programación a medida</a></li>
+                                <li><a class="dropdown-item page-transition" href="/src/servicios/servicios-de-seguridad.html">Servicios de seguridad</a></li>
+                                <li><a class="dropdown-item page-transition" href="/src/servicios/seo-y-sem.html">SEO y SEM</a></li>
                             </ul>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a class="nav-link active" aria-current="page" href="nuestro-portfolio.html">Portfolio</a>
+                            <a class="nav-link active page-transition" aria-current="page" href="/src/nuestro-portfolio.html">Portfolio</a>
                         </li>
                     </ul>
                     <div class="col-auto d-flex">
                         <div class="d-none d-lg-block">
-                            <a class="btn btn-primary rounded-pill text-white" data-barba-prevent href="contacto.html">Pedir presupuesto</a>
+                            <a class="btn btn-primary rounded-pill text-white page-transition" href="/src/contacto.html">Pedir presupuesto</a>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-        <main>
+        <main id="swup" class="transition-fade">
 
             <section>
                 <div class="container pb-5 my-5">
@@ -238,8 +236,7 @@
                             <div class="card-body">
                                 <h3 class="card-title h5 fw-bold my-4">TU SUEÑO</h3>
                                 <p class="card-text">Tienes una idea, nosotros la transformamos en proyecto y de ahí
-                                    creamos
-                                    tu sueño. Desde el principio o en alguna etapa estamos para servirte.</p>
+                                    creamos tu sueño. Desde el principio o en alguna etapa estamos para servirte.</p>
                             </div>
                         </div>
                     </div>
@@ -550,7 +547,7 @@
 
 
         </main>
-
+        <div class="transition-wipe overlay"></div>
 
 
 
@@ -628,8 +625,8 @@
             </div>
         </div>
     </footer>
-    <script src="js/swup.js"></script>
-    <script src="js/SwupPreloadPlugin.js"></script>
+    <script src="js/swup.min.js"></script>
+    <script src="js/SwupPreloadPlugin.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

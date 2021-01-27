@@ -1,3 +1,4 @@
+const swup = new Swup();
 /* const loadingScreen = document.querySelector(".loading-screen");
 const fade = document.querySelector(".fade-out");
 
@@ -23,7 +24,3 @@ function pageTransitionOut(container) {
 	);
 }
  */
-
-const swup = new Swup({
-	plugins: [new SwupPreloadPlugin()]
-});

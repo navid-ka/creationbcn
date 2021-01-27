@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" id="swup" class="transition-overlay">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
@@ -60,7 +60,7 @@
     </header>
 
     <div>
-    <main>
+    <main id="swup" class="transition-overlay">
         <section>
             <section class="pad-bot-5">
                 <div class="">
@@ -82,7 +82,7 @@
 
             </section>
     </main>
-    </div>
+    <div class="transition-wipe overlay"></div>
     <footer class="bg-success">
         <div class=" big-container pad-top-10">
             <div class="row pad-bot-4">
@@ -160,8 +160,9 @@
         </div>
     </footer>
 
-    <script src="../js/swup.js"></script>
-    <script src="../js/SwupPreloadPlugin.js"></script>
+    <script src="../js/swup.min.js"></script>
+    <script src="../js/SwupPreloadPlugin.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
