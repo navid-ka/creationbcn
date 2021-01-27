@@ -23,12 +23,12 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light py-5">
-            <div class="container-xl overflow-hidden">
+            <div class="container-xl">
                 <div class="d-flex">
                     <img class="d-block img-fluid" src="../img/logo_creationbcn2.png" alt="logo creationBCN" height="80"
                         width="80" />
-                    <a class="navbar-brand fw-bold mt-3" href="#"><span class="h4 fw-bold g-0">Creation</span><span
-                            class="text-primary h4 fw-bold">BCN</span></a>
+                    <a class="navbar-brand fw-bold mt-3 page-transition" href="/src/index.html"><span
+                            class="h4 fw-bold g-0">Creation</span><span class="text-primary h4 fw-bold">BCN</span></a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,30 +37,50 @@
                 <div class="nav collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav nav mx-auto">
                         <li class="nav-item mx-auto">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active page-transition" aria-current="page" href="/src/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item mx-auto dropdown">
+                            <a class="nav-link text-dark page-transition" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item page-transition" href="/src/nuestros-servicios.html">Nuestros Servicios</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item page-transition" href="/src/servicios/diseno-web-barcelona.html">Diseño web</a></li>
+                                <li><a class="dropdown-item page-transition" href="/src/servicios/soluciones-e-commerce.html">Soluciones e-commerce</a>
+                                </li>
+                                <li><a class="dropdown-item page-transition" href="/src/servicios/email-marketing.html">Email Marketing</a></li>
+                                <li><a class="dropdown-item page-transition" href="/src/servicios/programacion-a-medida.html">Programación a medida</a>
+                                </li>
+                                <li><a class="dropdown-item page-transition" href="/src/servicios/servicios-de-seguridad.html">Servicios de
+                                        seguridad</a></li>
+                                <li><a class="dropdown-item page-transition" href="/src/servicios/seo-y-sem.html">SEO y SEM</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a class="nav-link active" aria-current="page" href="#">Servicios</a>
-                        </li>
-                        <li class="nav-item mx-auto">
-                            <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                            <a class="nav-link active page-transition" aria-current="page"
+                                href="/src/nuestro-portfolio.html">Portfolio</a>
                         </li>
                     </ul>
                     <div class="col-auto d-flex">
                         <div class="d-none d-lg-block">
-                            <a class="btn btn-primary rounded-pill text-white" href="">Pedir presupuesto</a>
+                            <a class="btn btn-primary rounded-pill text-white page-transition" data-barba-prevent
+                                href="/src/contacto.html">Pedir presupuesto</a>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-        <div class="container pad-bot-5">
-                <h1 class="text-center text-primary fw-bold">TITULO PROYECTO</h1>
-        </div>
     </header>
 
-    <div>
     <main id="swup" class="transition-fade">
+        <div class="container pad-bot-5">
+            <h1 class="text-center text-primary fw-bold">TITULO PROYECTO</h1>
+        </div>
         <section>
             <section class="pad-bot-5">
                 <div class="">
