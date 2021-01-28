@@ -1,7 +1,10 @@
-const swup = new Swup();
-/* const contact = document.getElementById('contact');
-console.log(contact)
+const options = {
+    plugins: [
+        new SwupScrollPlugin({
+            doScrollingRightAway: true,
+			animateScroll: false
+        })
+    ]
+};
 
-contact.addEventListener('onclick', ()=> {
-	location.reload();
-}) */
+const swup = new Swup(options);
