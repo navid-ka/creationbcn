@@ -244,8 +244,8 @@ $utilities: (
   position: absolute;
   width: 0%;
   height: 100%;
-  background-color: rgb(76, 53, 73);
-  background-image: url(../img/logo_creationbcn2.png);
+  background: linear-gradient($primary, $success);
+/*   background-image: url(../img/logo_creationbcn2.png); */
   background-repeat: no-repeat;
   background-position: center;
   left: 0;
@@ -262,7 +262,7 @@ html.is-animating .transition-fade {
   transform: translateY(-100px);
 }
 .page-transition {
-  transition: 600ms;
+  transition: 700ms;
   transform: translateX(0);
 }
 html.is-animating .page-transition {
@@ -272,6 +272,7 @@ html.is-animating .page-transition {
 .transition-wipe {
   transition: 1s cubic-bezier(0.45, 0.25, 0.60, 0.95);
   transform: translateX(-3000);
+  
 }
 html.is-animating .transition-wipe {
   transform: translateX(0);

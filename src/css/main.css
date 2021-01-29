@@ -191,8 +191,9 @@
   position: absolute;
   width: 0%;
   height: 100%;
-  background-color: #4c3549;
-  background-image: url(../img/logo_creationbcn2.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f3615a), to(#4c3549));
+  background: linear-gradient(#f3615a, #4c3549);
+  /*   background-image: url(../img/logo_creationbcn2.png); */
   background-repeat: no-repeat;
   background-position: center;
   left: 0;
@@ -216,8 +217,8 @@ html.is-animating .transition-fade {
 }
 
 .page-transition {
-  -webkit-transition: 600ms;
-  transition: 600ms;
+  -webkit-transition: 700ms;
+  transition: 700ms;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
