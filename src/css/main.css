@@ -71,6 +71,10 @@
   padding: 1rem;
 }
 
+.img-portfolio {
+  max-width: 500px;
+}
+
 .method {
   font-size: 1em;
   line-height: 1.75em;
