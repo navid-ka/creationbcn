@@ -14,9 +14,27 @@ const swup = new Swup(options);
 /* const tl = gsap.timeline({paused : true}); */
 
 //H1
-gsap.registerPlugin(ScrollTrigger); //gsap ScrolTrigger init
+/* gsap.registerPlugin(ScrollTrigger); //gsap ScrolTrigger init
 
-gsap.from(".container", {
+const sections = gsap.utils.toArray("section").forEach((section) => {
+
+    gsap.from(section, {
+        scrollTrigger: {
+            trigger: section,
+            start: "top 95%",
+            end:"top 5%",
+            toggleActions: "play none restart none",
+            markers: true,
+        },
+        opacity: 0,
+        x: -50,
+        ease: "Power2.easeIn",
+    });
+
+});
+ */
+
+/* gsap.from(".container", {
 	scrollTrigger: {
 		trigger: ".container",
 		toggleActions: "play none restart none",
@@ -26,29 +44,8 @@ gsap.from(".container", {
 	delay: 1,
 	x: -50,
 	ease: "Power2.easeIn",
-});
-gsap.from(".big-container", {
-	scrollTrigger: {
-		trigger: ".big-container",
-		toggleActions: "play none restart none",
-		markers: true,
-	},
-	opacity: 0,
-	delay: 1,
-	x: -50,
-	ease: "Power2.easeIn",
-});
-gsap.from(".container-1920", {
-	scrollTrigger: {
-		trigger: ".container-1920",
-		toggleActions: "play none restart none",
-		markers: true,
-	},
-	opacity: 0,
-	delay: 1,
-	x: -50,
-	ease: "Power2.easeIn",
-});
+}); */
+
 
 // contact
 
