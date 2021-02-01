@@ -162,11 +162,8 @@
   overflow: hidden;
   z-index: 10;
   pointer-events: none;
-}
-
-/* Loading Screen Styling Ends
-
-.fade-in{
+} */
+/* .fade-in{
   position: relative;
   padding-left: 0;
   padding-right: 0;
@@ -193,7 +190,6 @@
   height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#f3615a), to(#4c3549));
   background: linear-gradient(#f3615a, #4c3549);
-  /*   background-image: url(../img/logo_creationbcn2.png); */
   background-repeat: no-repeat;
   background-position: center;
   left: 0;

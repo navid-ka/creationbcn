@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@swup/js-plugin": "^1.0.4",
     "@swup/preload-plugin": "^1.0.3",
     "bootstrap": "^5.0.0-beta1",
     "swup": "^2.0.14"

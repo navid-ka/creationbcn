@@ -1,38 +1,61 @@
-const options = {
+const swup = new Swup({
 	plugins: [
+		/* new SwupJsPlugin(options), */
 		new SwupScrollPlugin({
 			doScrollingRightAway: true,
 			animateScroll: false,
 		}),
 	],
-};
+});
 
-const swup = new Swup(options);
+
+
+/* const loadingScreen = document.querySelector(".loading-screen");
+const options = [
+	{
+		from: "(.*)",
+		to: "(.*)",
+		in: (next) => {
+            gsap.to(loadingScreen, {
+                width: "100%",
+                duration: 0.5,
+                onComplete: next,
+            });
+            gsap.registerPlugin(ScrollTrigger) 
+            const sections = gsap.utils.toArray("section").forEach((section) => {
+                gsap.from(section, {
+                    scrollTrigger: {
+                        trigger: section,
+                        start: "top 95%",
+                        end: "top 5%",
+                        toggleActions: "play none restart none",
+                        markers: true,
+                    },
+                    opacity: 0,
+                    x: -50,
+                    ease: "Power2.easeIn",
+                    onComplete: next,
+                })
+            })
+            
+		},
+		out: (next) => {
+            gsap.timeline({ delay: 0.3 }).add("start").to(
+                loadingScreen,
+                {
+                    width: "0%",
+                    duration: 0.3,
+                    ease: "power1.out",
+                    onComplete: next,
+                },
+                "start"
+            );
+		},
+	},
+];
+ */
 
 //Animations
-
-/* const tl = gsap.timeline({paused : true}); */
-
-//H1
-/* gsap.registerPlugin(ScrollTrigger); //gsap ScrolTrigger init
-
-const sections = gsap.utils.toArray("section").forEach((section) => {
-
-    gsap.from(section, {
-        scrollTrigger: {
-            trigger: section,
-            start: "top 95%",
-            end:"top 5%",
-            toggleActions: "play none restart none",
-            markers: true,
-        },
-        opacity: 0,
-        x: -50,
-        ease: "Power2.easeIn",
-    });
-
-});
- */
 
 /* gsap.from(".container", {
 	scrollTrigger: {
@@ -45,7 +68,6 @@ const sections = gsap.utils.toArray("section").forEach((section) => {
 	x: -50,
 	ease: "Power2.easeIn",
 }); */
-
 
 // contact
 
