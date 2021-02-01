@@ -1,3 +1,20 @@
+window.addEventListener('scroll', () => {
+	var element = document.querySelector('.wow');
+	if(element.scrollTop >= 100) {
+		console.log(element)
+		element.classList.remove('animate__animated');
+		element.removeAttribute('style')
+		new WOW().init();
+	}
+});
+
+
+
+
+new WOW().init();
+
+
+
 const swup = new Swup({
 	plugins: [
 		/* new SwupJsPlugin(options), */
