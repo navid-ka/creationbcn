@@ -31,6 +31,16 @@
 	xl: 1266px,
 	xxl: 1266px,
 ); */
+.dropdown-menu {
+  text-align: center !important;
+  left: -60% !important;
+}
+
+.dropdown-item:hover {
+  color: white !important;
+  background-color: #f3615a !important;
+}
+
 .footer-title {
   line-height: 163%;
   -webkit-box-align: center;
