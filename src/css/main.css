@@ -63,7 +63,7 @@
 
 @media (max-width: 780px) {
   .vector {
-    background-image: none;
+    background-image: none !important;
   }
 }
 
