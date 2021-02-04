@@ -1,0 +1,27 @@
+{
+  "name": "creationbcn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@swup/js-plugin": "^1.0.4",
+    "@swup/preload-plugin": "^1.0.3",
+    "bootstrap": "^5.0.0-beta1",
+    "swup": "^2.0.14"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navid-ka/creationbcn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/navid-ka/creationbcn/issues"
+  },
+  "homepage": "https://github.com/navid-ka/creationbcn#readme"
+}

@@ -1,0 +1,6 @@
+#archivos excluidos 
+
+node_modules/
+utils/
+mod/
+

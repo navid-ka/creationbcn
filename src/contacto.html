@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description"
+            content="Agencia Creativa Digital en Barcelona, Diseño Web Profesional, SEO y SEM. Plan de Marketing Digital y Community Manager. CreationBCN, tu agencia creativa BCN" />
+        <meta name="author" content="" />
+        <title>
+            Agencia Creativa Barcelona | Diseño Web en Barcelona | SEO | SEM
+        </title>
+        <link rel="canonical" href="https://creationbcn.com/" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="css/main.css" rel="stylesheet"/>
+        <!--JS-->
+        <script src="js/bootstrap.js" defer></script>
+    
+    </head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light py-5">
+            <div class="container-xl">
+                <div class="d-flex">
+                    <img class="d-block img-fluid" src="img/logo_creationbcn2.png" alt="logo creationBCN" height="80"
+                        width="80" />
+                    <a class="navbar-brand fw-bold mt-3 page-transition" data-no-swup href="/src/index.html"><span class="h4 fw-bold g-0">Creation</span><span
+                            class="text-primary h4 fw-bold">BCN</span></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="nav collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav nav ms-auto mx-lg-auto text-end">
+                        <li class="nav-item">
+                            <a class="nav-link active page-transition" aria-current="page"  data-no-swup href="/src/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active text-dark page-transition" data-no-swup href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item page-transition" data-no-swup href="/src/nuestros-servicios.html">Nuestros Servicios</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item page-transition" data-no-swup href="/src/servicios/diseno-web-barcelona.html">Diseño web</a></li>
+                                <li><a class="dropdown-item page-transition" data-no-swup href="/src/servicios/soluciones-e-commerce.html">Soluciones e-commerce</a></li>
+                                <li><a class="dropdown-item page-transition" data-no-swup href="/src/servicios/email-marketing.html">Email Marketing</a></li>
+                                <li><a class="dropdown-item page-transition" data-no-swup href="/src/servicios/programacion-a-medida.html">Programación a medida</a></li>
+                                <li><a class="dropdown-item page-transition" data-no-swup href="/src/servicios/servicios-de-seguridad.html">Servicios de seguridad</a></li>
+                                <li><a class="dropdown-item page-transition" data-no-swup href="/src/servicios/seo-y-sem.html">SEO y SEM</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link active page-transition" aria-current="page" data-no-swup href="/src/nuestro-portfolio.html">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="swup" class="transition-fade">
+        <section class="pt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md me-5 text-center text-md-start">
+                        <h1 class="display-3 fw-bold py-5">Te ayudamos <br>a crear tu <span class="text-primary vector pb-5 pe-5">proyecto</span></h1>
+                        <div class="pt-4">
+                            <p class="h4 text-secondary footer-title">Contacta con nosotros:</p>
+                        </div>
+                        <div class="pt-4">
+                            <a href="tel:+34600761079" class="text-primary fw-bold h2 text-decoration-none">+34 600 76 10 79</a>
+                        </div>
+                        <div class="pt-4">
+                            <a href="mailto:info@creationbcn.com" class="text-primary fw-bold h2 text-decoration-none">info@creationbcn.com</a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <h2 class="fw-bold h2 text-center my-5">¡Empezamos!</h2>
+                        <div class="alert" id="messages"></div>
+                        <form method="post" action="" name="contact" id="contact" onsubmit="enviar(this); return false;">   
+                            <div>
+                                <div class="form-floating mb-3 border-bottom border-3">
+                                    <input type="text" class="form-control border-0" id="floatingInput" placeholder="Nombre"  name="name" required>
+                                    <label for="floatingInput">Nombre *</label>
+                                </div>
+                                <div class="form-floating mb-3 border-bottom border-3">
+                                    <input type="text" class="form-control border-0" id="floatingApellidos" placeholder="Apellidos" name="apellidos" required>
+                                    <label for="floatingApellidos">Apellidos *</label>
+                                </div>
+                                <div class="form-floating mb-3 border-bottom border-3">
+                                    <input type="email" class="form-control border-0" id="floatingEmail" placeholder="Email"  name="email" required>
+                                    <label for="floatingEmail">Email *</label>
+                                </div>
+                                <div class="form-floating mb-5 border-bottom border-3">
+                                    <textarea class="form-control border-0 textarea" placeholder="Leave a comment here" id="floatingTextarea" name="subject"></textarea>
+                                    <label for="floatingTextarea">Mensaje *</label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadio" required>
+                                    <label class="form-check-label" for="flexRadio" >He leído y acepto la política de <a class="page-transition" href="#">privacidad</a>.</label>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <button type="submit" id="send" name="send" class="btn btn-lg btn-primary rounded-pill text-white px-3 py-2 h4">Enviar</button>  
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="transition-wipe overlay"></div>
+    <script src="js/swup.min.js"></script>
+    <script src="js/SwupPreloadPlugin.min.js"></script>
+    <script src="js/SwupScrollPlugin.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
